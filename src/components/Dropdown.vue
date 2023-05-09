@@ -27,22 +27,26 @@ export default {
 <style lang="scss" scoped>
 #sub-items{
   list-style: none;
+  position: absolute;
+  top: 120px;
 }
 ul{
-  margin-top: 20px;
+  position: relative;
+  top: 50px;
 }li{
-  
+  background-color: white;
+  padding: 10px;
+    &:hover{
+      background-color: #f6f6f6;
+      cursor: pointer;
+    }
     a{
       font-size: 0.83rem;
       cursor: pointer;
       text-decoration: none;
       color: black;
-      background-color: white;
       
-      &:hover{
-        background-color: #f6f6f6;
       }
       
     }
-  }
 </style>
