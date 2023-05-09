@@ -78,6 +78,7 @@ export default {
   }
   }i{
     padding-left: 5px;
+    font-size: 9px;
   }.btn.blue{
     background-color: $star-button-and-hoverlink;
     padding: 10px 20px;

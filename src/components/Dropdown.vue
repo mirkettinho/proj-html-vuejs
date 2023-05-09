@@ -38,7 +38,7 @@ ul{
       text-decoration: none;
       color: black;
       background-color: white;
-      padding: 10px;
+      
       &:hover{
         background-color: #f6f6f6;
       }

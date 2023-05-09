@@ -4,6 +4,7 @@ const headerMenu = {
     {
       title: "Home",
       open: false,
+      isActive: true,
       subnav: [
         {
           title: "Home 1",
@@ -87,7 +88,6 @@ const headerMenu = {
     {
       title: "Elements",
       open: false,
-      isActive: true,
       subnav: [
         {
           title: "Featured Products Slider",
@@ -123,5 +123,86 @@ const headerMenu = {
   ]
 }
 
+const footerMenu = {
+  topRated: [
+    {
 
-export { headerMenu }
+    }
+  ],
+  recentPosts: [
+    {
+
+    }
+  ],
+  tags: [
+    {
+      text: "Black"
+    },
+    {
+      text: "boots"
+    },
+    {
+      text: "Brown"
+    },
+    {
+      text: "Casual"
+    },
+    {
+      text: "D&G"
+    },
+    {
+      text: "Fabric"
+    },
+    {
+      text: "flowers"
+    },
+    {
+      text: "Grey"
+    },
+    {
+      text: "hat"
+    },
+    {
+      text: "Hipster"
+    },
+    {
+      text: "lines"
+    },
+    {
+      text: "multi-purpose"
+    },
+    {
+      text: "New York"
+    },
+    {
+      text: "Outdoors"
+    },
+    {
+      text: "red"
+    },
+    {
+      text: "responsive"
+    },
+    {
+      text: "summer"
+    },
+    {
+      text: "sweater"
+    },
+    {
+      text: "Travel"
+    },
+    {
+      text: "Warn"
+    },
+    {
+      text: "White"
+    },
+    {
+      text: "winter"
+    }
+  ]
+}
+
+
+export { headerMenu, footerMenu }
