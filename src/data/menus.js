@@ -87,6 +87,7 @@ const headerMenu = {
     {
       title: "Elements",
       open: false,
+      isActive: true,
       subnav: [
         {
           title: "Featured Products Slider",
