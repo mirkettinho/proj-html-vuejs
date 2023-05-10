@@ -2,19 +2,29 @@
 <script>
 import Header from "./components/Header.vue"
 import Footer from "./components/Footer.vue"
+import SliderReviews from "./components/SliderReviews.vue"
+
 
 export default {
   name: "App",
   components: {
     Header,
-    Footer
+    Footer,
+    SliderReviews
   }
 }
 </script>
 
 <template>
 
+<!-- HEADER -->
   <Header />
+
+<!-- SLIDER REVIEWS -->
+  <SliderReviews />
+
+
+<!-- FOOTER -->
   <Footer />
 
 

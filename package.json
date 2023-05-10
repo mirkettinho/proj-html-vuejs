@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/karla": "^4.5.11",
+    "swiper": "^9.3.1",
     "vue": "^3.2.47",
     "vue-typed-js": "^0.1.2",
     "vue-typer": "^1.2.0"

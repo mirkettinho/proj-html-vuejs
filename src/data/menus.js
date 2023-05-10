@@ -5,6 +5,7 @@ const headerMenu = {
       title: "Home",
       open: false,
       isActive: true,
+      href: "#",
       subnav: [
         {
           title: "Home 1",
@@ -129,18 +130,22 @@ const footerMenu = {
       name: "Leather Gloves",
       rating: 5,
       price: 45,
-      image: "leather_gloves-120x156.jpg"
+      image: "img/leather_gloves-120x156.jpg"
     },
     {
       name: "Black Leather Jacket",
       rating: 5,
       discount: 235,
-      price: 200
+      price: 200,
+      image: "img/black_elegant_leather_jacket-120x156.jpg"
+
     },
     {
       name: "Spring Printed Dress",
       rating: 4,
-      price: 47
+      price: 47,
+      image: "img/spring_printed_dress-120x156.jpg"
+
     }
   ],
   recentPosts: [
