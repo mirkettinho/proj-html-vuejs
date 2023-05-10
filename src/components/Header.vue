@@ -43,7 +43,7 @@ export default {
     <!-- HEADER LOGO + LINKS -->
     <div id="header" class="container">
       <div class="logo" id="home">
-        <img src="/img/classic_shop_logo1x.png" alt="">
+        <img src="/img/logo/classic_shop_logo1x.png" alt="">
       </div>
       <ul id="link">
         <li  v-for="(link,index) in headerMenu.links" :key="index">
