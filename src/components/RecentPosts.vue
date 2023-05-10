@@ -10,11 +10,40 @@ export default {
     return{
       footerMenu
     }
-  }
+  },
+  methods: {
+      enter(el) {
+        el.style.height = 'auto';
+        const height = getComputedStyle(el).height;
+        el.style.height = 0;
+        getComputedStyle(el);
+
+        setTimeout(() => {
+          el.style.height = height;
+        });        
+      },
+      afterEnter(el) {
+        el.style.height = 'auto';
+      },
+      leave(el) {
+        el.style.height = getComputedStyle(el).height;
+
+        getComputedStyle(el);
+
+        setTimeout(() => {
+          el.style.height = 0;
+        });
+      }
+    }
 }
 </script>
 
 <template>
+  <transitio
+    name="expand"
+    @enter="enter"
+    @after-enter="afterEnter"
+    @leave="leave">
   <div class="card" v-for="(post,index) in footerMenu.recentPosts" :key="index">
     <div class="card-header" @click="post.open = !post.open">
       
@@ -28,6 +57,7 @@ export default {
     <div class="bottom"></div>
 
   </div>
+</transitio>
 </template>
 
 <style lang="scss" scoped>
@@ -41,6 +71,7 @@ export default {
   padding: 0 10px;
 }.card-header{
   padding: 10px 0;
+  font-size: 0.8rem;
   a{
     cursor: pointer;
     &:hover{
@@ -56,8 +87,12 @@ export default {
 
 }.card-content{
       margin-left: 19px;
-      
+      padding-top: 5px;
     }.active{
       color: $star-button-and-hoverlink;
     }
+    .expand-enter-active, .expand-leave-active {
+    transition: height .5s ease-in-out;
+    overflow: hidden;
+  }
 </style>

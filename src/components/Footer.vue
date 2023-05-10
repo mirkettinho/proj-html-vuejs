@@ -103,7 +103,7 @@ export default {
     
   }
   .col.last{
-    width: 23%;
+    width: 20%;
   }
   .col{
     
@@ -114,6 +114,12 @@ export default {
       padding: 4px 10px;
       margin: 1px;
       border: 1px solid #34373b;
+      font-size: 0.7rem;
+      &:hover{
+        background-color: $hover-tags;
+        color: white;
+        cursor: pointer;
+      }
     }
     .logo{
       width: 160px;
