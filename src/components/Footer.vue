@@ -20,19 +20,42 @@ export default {
 
       <!-- COL 1 -->
       <div class="col">
-        
+        <img class="logo" src="img/classic_shop_logo_footer.png" alt="">
+
+        <div class="contact">
+          <span>12345 North Main Street,</span>
+          <span>New York, NY 555555</span>
+          <span>Phone: 1.800.555.6789</span>
+          <span>Email: info@company.com</span>
+          <span>Web: Theme-fusion.com</span>
+        </div>
+
+        <div class="social ">
+          <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/login?lang=it" target="blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
+
       <!-- col 2 -->
       <div class="col">
-        2
+        <h5>TOP RATED PRODUCTS</h5>
+
       </div>
+
       <!-- COL 3  -->
       <div class="col">
-        3
+        <h5>RECENT POSTS</h5>
+        
       </div>
+
       <!-- COL 4 -->
       <div class="col">
-        4
+        <h5>TAGS</h5>
+        <div class="tags d-flex wrap" >
+          <span v-for="(tag,index) in footerMenu.tags" :key="index">{{ tag.text }}</span>
+        </div>
       </div>
     </div>
   </footer>
@@ -52,7 +75,9 @@ export default {
 
 #footer{
   background-color: $footer-color;
-  color: white;
+  color: $footer-text-color;
+  padding-top: 50px;
+  padding-bottom: 25px;
   .top{
     display: flex;
     
@@ -60,7 +85,31 @@ export default {
   .col{
     background-color: green;
     width: 25%;
-    
+    h5{
+      padding-bottom: 20px;
+    }.tags span{
+      padding: 4px 10px;
+      margin: 1px;
+      border: 1px solid #34373b;
+    }
+    .logo{
+      width: 160px;
+      padding-bottom: 40px;
+    }.contact{
+      padding-bottom: 40px;
+      span{
+      display: inline-block;
+    }
+  }
+
+    .social a{
+    padding: 6px;
+    i{
+      font-size: 10px;
+      color: $footer-social;
+
+    }
+  }
   }
 }
 .footer-bottom{
