@@ -10,6 +10,21 @@
   margin: 0 auto;
 }
 
+// UTILITY
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: space-between;
+}
+
+.align-items {
+  align-items: center;
+}
+
+//GENERAL
 .btn {
   cursor: pointer;
 }
