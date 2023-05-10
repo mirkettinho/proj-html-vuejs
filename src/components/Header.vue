@@ -48,8 +48,7 @@ export default {
       </div>
       <ul id="link">
         <li  v-for="(link,index) in headerMenu.links" :key="index">
-          <a :class="{'active' : link.isActive}" @click="link.open = !link.open" :href="link.href">{{ link.title }}</a>
-          <i v-if="link.subnav" :class="{'fa-solid fa-chevron-down' : !link.open, 'fa-solid fa-chevron-up' : link.open}"></i>
+          <a :class="{'active' : link.isActive}" @click="link.open = !link.open" :href="link.href">{{ link.title }}<i v-if="link.subnav" :class="{'fa-solid fa-chevron-down' : !link.open, 'fa-solid fa-chevron-up' : link.open}"></i></a>
           <Dropdown v-if="link.subnav" :list="link"/>
         </li>
         <a class="btn blue ">SHOP NOW!</a>

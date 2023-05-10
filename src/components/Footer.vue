@@ -1,9 +1,13 @@
 <script>
 import {footerMenu} from "../data/menus"
+import RecentPosts from "../components/RecentPosts.vue"
 
 
 export default {
   name: "Footer",
+  components: {
+    RecentPosts
+  },
   data(){
     return{
       footerMenu
@@ -19,6 +23,7 @@ export default {
     <div class="top container">
 
       <!-- COL 1 -->
+      <!-- CONTACTS -->
       <div class="col">
         <img class="logo" src="img/classic_shop_logo_footer.png" alt="">
 
@@ -39,19 +44,34 @@ export default {
       </div>
 
       <!-- col 2 -->
+      <!-- TOP RATED PRODUCTS -->
       <div class="col">
         <h5>TOP RATED PRODUCTS</h5>
+        <div class="single-card" v-for="(rated,index) in footerMenu.topRated" :key="index">
 
+          <div class="description-card">
+            <h6>{{ rated.name }}</h6>
+            <h6>{{ rated.rating }}</h6>
+            <h6>{{ rated.discount }} {{ rated.price }}</h6>
+          </div>
+
+          <div class="image-card">
+            <img :src="`img/{{rated.image}}`" alt="">
+          </div>
+
+        </div>
       </div>
 
       <!-- COL 3  -->
+      <!-- RECENT POSTS -->
       <div class="col">
         <h5>RECENT POSTS</h5>
-        
+        <RecentPosts />
       </div>
 
       <!-- COL 4 -->
-      <div class="col">
+      <!-- TAGS -->
+      <div class="col last">
         <h5>TAGS</h5>
         <div class="tags d-flex wrap" >
           <span v-for="(tag,index) in footerMenu.tags" :key="index">{{ tag.text }}</span>
@@ -82,8 +102,11 @@ export default {
     display: flex;
     
   }
+  .col.last{
+    width: 23%;
+  }
   .col{
-    background-color: green;
+    
     width: 25%;
     h5{
       padding-bottom: 20px;

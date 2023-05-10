@@ -1,1 +1,9 @@
 @use "./partial/general" as *;
+
+
+// IMPORT FONT
+@import '@fontsource/karla/index.css';
+
+body {
+  font-family: "Karla", sans-serif;
+}

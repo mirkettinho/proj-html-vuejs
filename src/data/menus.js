@@ -126,12 +126,53 @@ const headerMenu = {
 const footerMenu = {
   topRated: [
     {
-
+      name: "Leather Gloves",
+      rating: 5,
+      price: 45,
+      image: "leather_gloves-120x156.jpg"
+    },
+    {
+      name: "Black Leather Jacket",
+      rating: 5,
+      discount: 235,
+      price: 200
+    },
+    {
+      name: "Spring Printed Dress",
+      rating: 4,
+      price: 47
     }
   ],
   recentPosts: [
     {
-
+      title: "Aenean lobortis sapien enim viverra",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ",
+      open: false
+    },
+    {
+      title: "Duis ac massa semper maximus",
+      content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      open: false
+    },
+    {
+      title: "Nunc fermint nulla eu justo sem id",
+      content: "colore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      open: false
+    },
+    {
+      title: "Aliquam posuere magna eget nibh",
+      content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+      open: false
+    },
+    {
+      title: "Cras ac nulla ac consecte rutrum",
+      content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      open: false
+    },
+    {
+      title: "Fusce mattis nunc ut aliquam",
+      content: "Nemo enim ipsam voluptatem, quia voluptas sit.",
+      open: false
     }
   ],
   tags: [
