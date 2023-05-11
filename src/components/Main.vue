@@ -3,11 +3,13 @@
 import BrandLogo from "./micro-components/BrandLogo.vue"
 import MiniShowcase from "./micro-components/MiniShowcase.vue"
 import FromOurBlog from "./micro-components/FromOurBlog.vue"
+import Testimonials from "./micro-components/Testimonials.vue"
 
 
 export default {
   name: "Main",
   components: {
+    Testimonials,
     FromOurBlog,
     MiniShowcase,
     BrandLogo
@@ -18,6 +20,8 @@ export default {
 <template>
   
 
+  <!-- TESTIMONIALS -->
+  <Testimonials />
 
   <!-- FROM OUR BLOG -->
   <FromOurBlog />

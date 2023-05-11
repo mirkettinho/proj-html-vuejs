@@ -41,7 +41,7 @@ export default {
       :spaceBetween="0"
       :loop="true"
       :autoplay="{
-      delay: 2500,
+      delay: 5000,
       disableOnInteraction: false,
       }"
       :navigation="true"
@@ -76,11 +76,14 @@ export default {
 }
 .card{
   height: 200px;
+  
   img{
     height: 120px;
     padding-left: 60px;
     
   }
-}
-
+    
+  }
+  
+  
 </style>

@@ -61,6 +61,7 @@ export default {
 .title{
   margin: 0px 20px;
   padding-bottom: 10px;
+  padding-top: 90px;
 }
 
 .second-title{

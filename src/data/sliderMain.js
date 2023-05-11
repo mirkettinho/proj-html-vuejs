@@ -188,7 +188,24 @@ const fromOurBlog = {
   ]
 }
 
+const Testimonials = {
+  article: [
+    {
+      image: "img/testimonial/man_testimonial.png",
+      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio inventore sit omnis aperiam, blanditiis dolor culpa! Eveniet assumenda non, voluptate dolore blanditiis, itaque quae, ipsam architecto sequi recusandae corrupti aspernatur.",
+      credits: "Dario Pineda",
+      creditsTwo: "Theme Fusion",
+    },
+    {
+      image: "img/testimonial/woman_testimonial.png",
+      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolore, cupiditate voluptatem minima ipsam accusamus consequatur quos ipsa a similique.",
+      credits: "Lisa Smith",
+      creditsTwo: "Theme Fusion",
+    },
+  ]
+}
 
 
 
-export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog }
+
+export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials }
