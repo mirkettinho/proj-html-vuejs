@@ -266,5 +266,47 @@ const Promos = {
   ]
 }
 
+const BestSeller = {
+  sellers: [
+    {
+      image: "img/products/black_elegant_leather_jacket-231x300.jpg"
+    },
+    {
+      image: "img/products/hipster_black_top-231x300.jpg"
+    },
+    {
+      image: "img/products/black_leather_suit-200x260.jpg"
+    },
+    {
+      image: "img/products/modern_love_tee-200x260.jpg"
+    },
+    {
+      image: "img/products/spring_printed_dress-231x300.jpg"
+    },
+    {
+      image: "img/products/black_leather_jacket-231x300.jpg"
+    },
+    {
+      image: "img/products/black_elegant_leather_jacket-231x300.jpg"
+    },
+    {
+      image: "img/products/hipster_black_top-231x300.jpg"
+    },
+    {
+      image: "img/products/black_leather_suit-200x260.jpg"
+    },
+    {
+      image: "img/products/spring_printed_dress-231x300.jpg"
+    },
+    {
+      image: "img/products/black_leather_jacket-231x300.jpg"
+    },
+    {
+      image: "img/products/modern_love_tee-200x260.jpg"
+    },
 
-export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals, Promos }
+  ]
+}
+
+
+export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals, Promos, BestSeller }

@@ -6,12 +6,14 @@ import FromOurBlog from "./micro-components/FromOurBlog.vue"
 import Testimonials from "./micro-components/Testimonials.vue"
 import NewArrivals from "./micro-components/NewArrivals.vue"
 import Promo from "./micro-components/Promo.vue"
+import BestSeller from "./micro-components/BestSeller.vue"
 
 
 
 export default {
   name: "Main",
   components: {
+    BestSeller,
     Promo,
     NewArrivals,
     Testimonials,
@@ -23,6 +25,10 @@ export default {
 </script>
 
 <template>
+
+  <!-- BEST SELLER -->
+  <BestSeller />
+
   <!-- PROMO -->
   <Promo />
 
