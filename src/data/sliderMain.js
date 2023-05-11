@@ -308,5 +308,31 @@ const BestSeller = {
   ]
 }
 
+const Collections = {
+  bundle: [
+    {
+      image: "img/collections/winter_collection_bg.jpg",
+      title: "Winter Collection",
+      type: "STYLISH AND WARM",
+      namebutton: "VIEW MORE",
+      href: "#"
+    },
+    {
+      image: "img/collections/spring_collection_bg.jpg",
+      title: "Spring Collection",
+      type: "BRIGHT AND COLORFUL",
+      namebutton: "VIEW MORE",
+      href: "#"
+    },
+    {
+      image: "img/collections/autumn_collection_bg.jpg",
+      title: "Autumn Collection",
+      type: "RICH AND COMFORTABLE",
+      namebutton: "VIEW MORE",
+      href: "#"
+    },
+  ]
+}
 
-export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals, Promos, BestSeller }
+
+export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals, Promos, BestSeller, Collections }

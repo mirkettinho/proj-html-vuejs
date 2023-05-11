@@ -7,12 +7,14 @@ import Testimonials from "./micro-components/Testimonials.vue"
 import NewArrivals from "./micro-components/NewArrivals.vue"
 import Promo from "./micro-components/Promo.vue"
 import BestSeller from "./micro-components/BestSeller.vue"
+import Collections from "./micro-components/Collections.vue"
 
 
 
 export default {
   name: "Main",
   components: {
+    Collections,
     BestSeller,
     Promo,
     NewArrivals,
@@ -25,6 +27,10 @@ export default {
 </script>
 
 <template>
+
+
+  <!-- COLLECTIONS -->
+  <Collections />
 
   <!-- BEST SELLER -->
   <BestSeller />
