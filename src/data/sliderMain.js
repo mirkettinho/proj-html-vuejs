@@ -152,7 +152,33 @@ const SectionMiniShowcase = {
   ],
 }
 
+const fromOurBlog = {
+  blogs: [
+    {
+      name: "Aenean lobortis sapien enim viverra",
+      date: "Semptember 9th, 2015",
+      comments: "0 comments",
+      content: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla.",
+      image: "img/blog/post_img_12-320x202.jpg"
+    },
+    {
+      name: "Duis ac massa semper maximus",
+      date: "Semptember 9th, 2015",
+      comments: "0 comments",
+      content: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla.",
+      image: "img/blog/post_img_11-320x202.jpg"
+    },
+    {
+      name: "Nunc fermint nulla eu justo sem id",
+      date: "Semptember 9th, 2015",
+      comments: "0 comments",
+      content: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla.",
+      image: "img/blog/post_img_10-320x202.jpg"
+    },
+  ]
+}
 
 
 
-export { sliderBrandLogo, SectionMiniShowcase }
+
+export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog }

@@ -6,7 +6,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import {sliderBrandLogo} from "../../data/sliderMain"
 
-import { Pagination, Navigation} from 'swiper';
+import { Autoplay, Pagination, Navigation} from 'swiper';
 
 
 export default {
@@ -22,7 +22,7 @@ export default {
     },
     setup() {
       return {
-        modules: [Pagination, Navigation],
+        modules: [Autoplay, Pagination, Navigation],
       };
     },
 }
@@ -40,6 +40,10 @@ export default {
       :slidesPerView="5"
       :spaceBetween="0"
       :loop="true"
+      :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+      }"
       :navigation="true"
       :modules="modules"
       class="mySwiper container">
