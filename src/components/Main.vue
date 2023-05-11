@@ -4,11 +4,13 @@ import BrandLogo from "./micro-components/BrandLogo.vue"
 import MiniShowcase from "./micro-components/MiniShowcase.vue"
 import FromOurBlog from "./micro-components/FromOurBlog.vue"
 import Testimonials from "./micro-components/Testimonials.vue"
+import NewArrivals from "./micro-components/NewArrivals.vue"
 
 
 export default {
   name: "Main",
   components: {
+    NewArrivals,
     Testimonials,
     FromOurBlog,
     MiniShowcase,
@@ -19,6 +21,9 @@ export default {
 
 <template>
   
+
+  <!-- NEW ARRIVALS -->
+  <NewArrivals />
 
   <!-- TESTIMONIALS -->
   <Testimonials />

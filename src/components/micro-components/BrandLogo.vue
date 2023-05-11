@@ -41,7 +41,7 @@ export default {
       :spaceBetween="0"
       :loop="true"
       :autoplay="{
-      delay: 5000,
+      delay: 2500,
       disableOnInteraction: false,
       }"
       :navigation="true"

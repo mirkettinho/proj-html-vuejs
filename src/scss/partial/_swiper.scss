@@ -47,3 +47,7 @@
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: white;
 }
+
+.swiper-slide.swiper-slide-active.swiper-slide-next {
+  width: 300px;
+}

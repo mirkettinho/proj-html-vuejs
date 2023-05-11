@@ -205,7 +205,49 @@ const Testimonials = {
   ]
 }
 
+const NewArrivals = {
+  arrivals: [
+    {
+      image: "img/products/black_elegant_leather_jacket-400x520.jpg"
+    },
+    {
+      image: "img/products/hipster_black_top-400x520.jpg"
+    },
+    {
+      image: "img/products/black_leather_suit-400x520.jpg"
+    },
+    {
+      image: "img/products/modern_love_tee-400x520.jpg"
+    },
+    {
+      image: "img/products/spring_printed_dress-400x520.jpg"
+    },
+    {
+      image: "img/products/black_leather_jacket-400x520.jpg"
+    },
+    {
+      image: "img/products/black_elegant_leather_jacket-400x520.jpg"
+    },
+    {
+      image: "img/products/hipster_black_top-400x520.jpg"
+    },
+    {
+      image: "img/products/black_leather_suit-400x520.jpg"
+    },
+    {
+      image: "img/products/spring_printed_dress-400x520.jpg"
+    },
+    {
+      image: "img/products/black_leather_jacket-400x520.jpg"
+    },
+    {
+      image: "img/products/modern_love_tee-400x520.jpg"
+    },
+
+  ]
+}
 
 
 
-export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials }
+
+export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals }
