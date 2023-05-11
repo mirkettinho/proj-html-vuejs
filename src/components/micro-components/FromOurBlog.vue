@@ -17,15 +17,15 @@ export default {
   <div class="container">
 
       <!-- TITLE -->
-    <div class="title d-flex align-items justify-content">
+    <div class="title d-flex align-items justify-content" v-for="(text,index) in fromOurBlog.title" :key="index">
       <div class="bottom"></div> 
-        <h1>From Our Blog</h1>
+        <h1>{{text.name}}</h1>
       <div class="bottom"></div>
     </div>
 
     <!-- SECOND-TITLE -->
-    <div class="second-title">
-      <h5>The latest Classic Shop news</h5>
+    <div class="second-title" v-for="(text,index) in fromOurBlog.subtitle" :key="index">
+      <h5>{{text.name}}</h5>
     </div>
 
     <!-- CARD -->
@@ -60,6 +60,7 @@ export default {
 }
 .title{
   margin: 0px 20px;
+  padding-bottom: 10px;
 }
 
 .second-title{

@@ -175,6 +175,16 @@ const fromOurBlog = {
       content: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla.",
       image: "img/blog/post_img_10-320x202.jpg"
     },
+  ],
+  title: [
+    {
+      name: "From Our Blog"
+    }
+  ],
+  subtitle: [
+    {
+      name: "The latest Classic Shop news"
+    }
   ]
 }
 
