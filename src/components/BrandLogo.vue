@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import {sliderBrandLogo} from "../data/sliderMain"
 
 import { Pagination, Navigation} from 'swiper';
 
@@ -16,7 +17,7 @@ export default {
     },
     data(){
       return{
-
+        sliderBrandLogo
       }
     },
     setup() {
@@ -30,7 +31,7 @@ export default {
 <template>
   <div class="bg">
     <div class="brand container">
-      <h5 >BRAND LOGO</h5>
+      <h5 v-for="(brand, index) in sliderBrandLogo.title" :key="index">{{brand.name}}</h5>
     </div>
   </div>
 
@@ -44,49 +45,14 @@ export default {
       class="mySwiper container">
 
       
-      <swiper-slide class="">
-        <div class="">
+      <swiper-slide  v-for="(brand, index) in sliderBrandLogo.brands" :key="index">
+
+        
           <div class="card">
-            <img src="/img/brands/b_logotype_1.png" alt="">
+          <a :href="brand.href"><img :src="brand.image" alt=""></a>
           </div>
-        </div>
       </swiper-slide>
 
-      <swiper-slide>
-        <div class="card">
-          <img src="/img/brands/b_logotype_2.png" alt="">
-        </div>
-      </swiper-slide>
-
-      <swiper-slide>
-        <div class="card">
-          <img src="/img/brands/b_logotype_3.png" alt="">
-        </div>
-      </swiper-slide>
-
-      <swiper-slide>
-        <div class="card">
-          <img src="/img/brands/b_logotype_4.png" alt="">
-        </div>
-      </swiper-slide>
-
-      <swiper-slide>
-        <div class="card">
-          <img src="/img/brands/b_logotype_5.png" alt="">
-        </div>
-      </swiper-slide>
-
-      <swiper-slide>
-        <div class="card">
-          <img src="/img/brands/b_logotype_6.png" alt="">
-        </div>
-      </swiper-slide>
-
-      <swiper-slide>
-        <div class="card">
-          <img src="/img/brands/b_logotype_7.png" alt="">
-        </div>
-      </swiper-slide>
     </swiper>
   </div>
 </template>
