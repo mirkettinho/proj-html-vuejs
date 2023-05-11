@@ -247,7 +247,24 @@ const NewArrivals = {
   ]
 }
 
+const Promos = {
+  promo: [
+    {
+      image: "img/promo_box/promo_box_1_bg.jpg",
+      title: "70% Off",
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      namebutton: "VIEW MORE",
+      href: "#",
+    },
+    {
+      image: "img/promo_box/promo_box_2_bg.jpg",
+      title: "Free Shipping",
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      namebutton: "VIEW MORE",
+      href: "#",
+    }
+  ]
+}
 
 
-
-export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals }
+export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals, Promos }

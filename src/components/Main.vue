@@ -5,11 +5,14 @@ import MiniShowcase from "./micro-components/MiniShowcase.vue"
 import FromOurBlog from "./micro-components/FromOurBlog.vue"
 import Testimonials from "./micro-components/Testimonials.vue"
 import NewArrivals from "./micro-components/NewArrivals.vue"
+import Promo from "./micro-components/Promo.vue"
+
 
 
 export default {
   name: "Main",
   components: {
+    Promo,
     NewArrivals,
     Testimonials,
     FromOurBlog,
@@ -20,7 +23,8 @@ export default {
 </script>
 
 <template>
-  
+  <!-- PROMO -->
+  <Promo />
 
   <!-- NEW ARRIVALS -->
   <NewArrivals />
