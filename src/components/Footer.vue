@@ -113,7 +113,7 @@ export default {
     width: 20%;
   }
   .col{
-    
+    margin: 0 auto;
     width: 25%;
     h5{
       padding-bottom: 20px;

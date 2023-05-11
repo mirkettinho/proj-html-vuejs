@@ -39,6 +39,8 @@ export default {
   background-color: #2e3238;
   .newsletter-content{
     padding: 70px 0;
+    margin-left: 30px;
+    
     i{
       font-size: 30px;
       color: #74797d;
