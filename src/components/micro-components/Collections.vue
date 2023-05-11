@@ -35,6 +35,7 @@ export default {
 @import "../../scss/partial/general";
 
 .col{
+  margin-top: 100px;
   width: calc(100% / 3);
   height: 620px;
   overflow: hidden;

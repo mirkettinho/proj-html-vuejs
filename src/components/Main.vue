@@ -8,12 +8,15 @@ import NewArrivals from "./micro-components/NewArrivals.vue"
 import Promo from "./micro-components/Promo.vue"
 import BestSeller from "./micro-components/BestSeller.vue"
 import Collections from "./micro-components/Collections.vue"
+import SliderTop from "./micro-components/SliderTop.vue"
+
 
 
 
 export default {
   name: "Main",
   components: {
+    SliderTop,
     Collections,
     BestSeller,
     Promo,
@@ -28,6 +31,8 @@ export default {
 
 <template>
 
+  <!-- SLIDER TOP -->
+  <SliderTop />
 
   <!-- COLLECTIONS -->
   <Collections />

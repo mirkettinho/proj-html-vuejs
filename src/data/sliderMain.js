@@ -334,5 +334,37 @@ const Collections = {
   ]
 }
 
+const sliderTop = {
+  jumbotron: [
+    {
+      image: "img/slide_jumbotron/home1_slide_one_bg.jpg",
+      title: "Avada Classic Shop",
+      type: "SHOW YOUR PRODUCTS WITH STYLE",
+      namebuttonOne: "GET AVADA NOW!",
+      namebuttonTwo: "",
+      hrefOne: "#",
+      hrefTwo: "#",
+    },
+    {
+      image: "img/slide_jumbotron/home1_slide_2_bg.jpg",
+      title: "Online Store",
+      type: "SELL YOUR PRODUCTS WITH STYLE",
+      namebuttonOne: "MEN",
+      namebuttonTwo: "WOMEN",
+      hrefOne: "#",
+      hrefTwo: "#",
+    },
+    {
+      image: "img/slide_jumbotron/home1_slide_three_bg_2.jpg",
+      title: "Brand New Arrivals",
+      type: "NEW COLLECTION FROM NEW YORK",
+      namebuttonOne: "VIEW ALL",
+      namebuttonTwo: "LOOKBOOK",
+      hrefOne: "#",
+      hrefTwo: "#",
+    },
+  ]
+}
 
-export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals, Promos, BestSeller, Collections }
+
+export { sliderBrandLogo, SectionMiniShowcase, fromOurBlog, Testimonials, NewArrivals, Promos, BestSeller, Collections, sliderTop }
