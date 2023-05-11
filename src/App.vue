@@ -2,7 +2,6 @@
 <script>
 import Header from "./components/Header.vue"
 import Footer from "./components/Footer.vue"
-import SliderReviews from "./components/SliderReviews.vue"
 import Main from "./components/Main.vue"
 
 
@@ -11,7 +10,6 @@ export default {
   components: {
     Header,
     Footer,
-    SliderReviews,
     Main
   }
 }
@@ -22,8 +20,7 @@ export default {
 <!-- HEADER -->
   <Header />
 
-<!-- SLIDER REVIEWS -->
-  <SliderReviews />
+<!-- MAIN -->
 
   <Main />
 <!-- FOOTER -->

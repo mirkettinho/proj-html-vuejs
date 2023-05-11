@@ -1,6 +1,6 @@
 
 <script>
-import BrandLogo from "./BrandLogo.vue"
+import BrandLogo from "./micro-components/BrandLogo.vue"
 
 export default {
   name: "Main",

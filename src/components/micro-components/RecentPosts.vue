@@ -1,6 +1,6 @@
 
 <script>
-import {footerMenu} from "../data/menus"
+import {footerMenu} from "../../data/menus"
 
 
 export default {
@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@use "../scss/partial/colors" as *;
+@use "../../scss/partial/colors" as *;
 
 .card{
   width: 92%;

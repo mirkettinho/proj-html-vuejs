@@ -1,6 +1,6 @@
 
 <script>
-import Dropdown from "../components/Dropdown.vue"
+import Dropdown from "./micro-components/Dropdown.vue"
 import {headerMenu} from "../data/menus"
 
 

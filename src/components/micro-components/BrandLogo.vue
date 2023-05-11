@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import {sliderBrandLogo} from "../data/sliderMain"
+import {sliderBrandLogo} from "../../data/sliderMain"
 
 import { Pagination, Navigation} from 'swiper';
 
@@ -61,7 +61,7 @@ export default {
 <style lang="scss" scoped>
 
 @import "swiper/swiper.css";
-@import "../scss/partial/general";
+@import "../../scss/partial/general";
 
 .brand{
   text-align: center;

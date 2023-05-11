@@ -1,6 +1,6 @@
 
 <script>
-import RecentPosts from ".//RecentPosts.vue"
+import RecentPosts from "../RecentPosts.vue"
 
 export default {
   name: "AnimationRecentPosts",

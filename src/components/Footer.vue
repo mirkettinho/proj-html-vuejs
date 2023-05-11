@@ -1,7 +1,7 @@
 <script>
 import {footerMenu} from "../data/menus"
-import RecentPosts from "../components/RecentPosts.vue"
-import Newsletter from "../components/Newsletter.vue"
+import RecentPosts from "./micro-components/RecentPosts.vue"
+import Newsletter from "./micro-components/Newsletter.vue"
 
 export default {
   name: "Footer",

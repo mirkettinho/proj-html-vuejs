@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@use "../scss/partial/colors" as *;
+@use "../../scss/partial/colors" as *;
 
 .newsletter{
   background-color: #2e3238;
