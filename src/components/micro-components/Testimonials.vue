@@ -77,6 +77,7 @@ export default {
   background-position: center;
   background-size: cover;
   
+  
   img{
     height: 80px;
     

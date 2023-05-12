@@ -32,7 +32,9 @@ export default {
     <div class="d-flex justify-content m-20">
 
       <div class="card-image m-right" v-for="(blog,index) in fromOurBlog.blogs" :key="index">
-        <img :src="blog.image" alt="">
+        <div class="image">
+          <img :src="blog.image" alt="">
+        </div>
 
         <div class="description-card">
           <h5>{{blog.name}}</h5>
@@ -75,19 +77,38 @@ export default {
   margin-right: 20px;
 }
 
+
 .card-image{
   padding-top: 60px;
   padding-bottom: 60px;
   width: 320px;
+  
   img{
-    padding-bottom: 15px;
+    height: 100%;
+    transition: 1s ease;
+    &:hover{
+      height: 110%;
+      filter: brightness(110%);
+      
+    }
   }
+  
+}
+
+.image{
+  width: 320px;
+  height: 215px;
+  overflow: hidden;
 }
 
 .description-card{
   h5{
     padding-bottom: 3px;
-    
+    padding-top: 15px;
+    &:hover{
+      color: $star-button-and-hoverlink;
+      cursor: pointer;
+    }
   }
   span{
     font-size: 0.7rem;

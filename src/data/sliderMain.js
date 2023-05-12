@@ -159,21 +159,21 @@ const fromOurBlog = {
       date: "Semptember 9th, 2015",
       comments: "0 comments",
       content: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla.",
-      image: "img/blog/post_img_12-320x202.jpg"
+      image: "img/blog/post_img_12-700x441.jpg"
     },
     {
       name: "Duis ac massa semper maximus",
       date: "Semptember 9th, 2015",
       comments: "0 comments",
       content: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla.",
-      image: "img/blog/post_img_11-320x202.jpg"
+      image: "img/blog/post_img_11-700x441.jpg"
     },
     {
       name: "Nunc fermint nulla eu justo sem id",
       date: "Semptember 9th, 2015",
       comments: "0 comments",
       content: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla.",
-      image: "img/blog/post_img_10-320x202.jpg"
+      image: "img/blog/post_img_10-700x441.jpg"
     },
   ],
   title: [
@@ -208,40 +208,102 @@ const Testimonials = {
 const NewArrivals = {
   arrivals: [
     {
-      image: "img/products/black_elegant_leather_jacket-400x520.jpg"
+      image: "img/products/black_elegant_leather_jacket-400x520.jpg",
+      title: "Black Leather Jacket",
+      type: "Men, Jackets, Jeaans",
+      discount: 235,
+      price: 200,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/hipster_black_top-400x520.jpg"
+      image: "img/products/hipster_black_top-400x520.jpg",
+      title: "Hipster Black Top",
+      type: "T-Shirts, Women",
+      price: 57,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_leather_suit-400x520.jpg"
+      image: "img/products/black_leather_suit-400x520.jpg",
+      title: "Black Leather Suit",
+      type: "Jackets, Men",
+      price: 176,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/modern_love_tee-400x520.jpg"
+      image: "img/products/modern_love_tee-400x520.jpg",
+      title: "Modern Love Tee",
+      type: "T-Shirts, Women",
+      price: 68,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/spring_printed_dress-400x520.jpg"
+      image: "img/products/spring_printed_dress-400x520.jpg",
+      title: "Spring Printed Dress",
+      type: "Dress, Women",
+      price: 47,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_leather_jacket-400x520.jpg"
+      image: "img/products/black_leather_jacket-400x520.jpg",
+      title: "Black Jacket",
+      type: "Jackets, Women",
+      price: 125,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_elegant_leather_jacket-400x520.jpg"
+      image: "img/products/black_elegant_leather_jacket-400x520.jpg",
+      title: "Black Leather Jacket",
+      type: "Men, Jackets, Jeaans",
+      discount: 235,
+      price: 200,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/hipster_black_top-400x520.jpg"
+      image: "img/products/hipster_black_top-400x520.jpg",
+      title: "Hipster Black Top",
+      type: "T-Shirts, Women",
+      price: 57,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_leather_suit-400x520.jpg"
+      image: "img/products/black_leather_suit-400x520.jpg",
+      title: "Black Leather Suit",
+      type: "Jackets, Men",
+      price: 176,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/spring_printed_dress-400x520.jpg"
+      image: "img/products/spring_printed_dress-400x520.jpg",
+      title: "Spring Printed Dress",
+      type: "Dress, Women",
+      price: 47,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_leather_jacket-400x520.jpg"
+      image: "img/products/black_leather_jacket-400x520.jpg",
+      title: "Black Jacket",
+      type: "Jackets, Women",
+      price: 125,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/modern_love_tee-400x520.jpg"
+      image: "img/products/modern_love_tee-400x520.jpg",
+      title: "Modern Love Tee",
+      type: "T-Shirts, Women",
+      price: 68,
+      shop: "Add to cart",
+      details: "Details"
     },
 
   ]
@@ -269,40 +331,102 @@ const Promos = {
 const BestSeller = {
   sellers: [
     {
-      image: "img/products/black_elegant_leather_jacket-231x300.jpg"
+      image: "img/products/black_elegant_leather_jacket-231x300.jpg",
+      title: "Black Leather Jacket",
+      type: "Men, Jackets, Jeaans",
+      discount: 235,
+      price: 200,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/hipster_black_top-231x300.jpg"
+      image: "img/products/hipster_black_top-231x300.jpg",
+      title: "Hipster Black Top",
+      type: "T-Shirts, Women",
+      price: 57,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_leather_suit-200x260.jpg"
+      image: "img/products/black_leather_suit-200x260.jpg",
+      title: "Black Leather Suit",
+      type: "Jackets, Men",
+      price: 176,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/modern_love_tee-200x260.jpg"
+      image: "img/products/modern_love_tee-200x260.jpg",
+      title: "Modern Love Tee",
+      type: "T-Shirts, Women",
+      price: 68,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/spring_printed_dress-231x300.jpg"
+      image: "img/products/spring_printed_dress-231x300.jpg",
+      title: "Spring Printed Dress",
+      type: "Dress, Women",
+      price: 47,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_leather_jacket-231x300.jpg"
+      image: "img/products/black_leather_jacket-231x300.jpg",
+      title: "Black Jacket",
+      type: "Jackets, Women",
+      price: 125,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_elegant_leather_jacket-231x300.jpg"
+      image: "img/products/black_elegant_leather_jacket-231x300.jpg",
+      title: "Black Leather Jacket",
+      type: "Men, Jackets, Jeaans",
+      discount: 235,
+      price: 200,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/hipster_black_top-231x300.jpg"
+      image: "img/products/hipster_black_top-231x300.jpg",
+      title: "Hipster Black Top",
+      type: "T-Shirts, Women",
+      price: 57,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_leather_suit-200x260.jpg"
+      image: "img/products/black_leather_suit-200x260.jpg",
+      title: "Black Leather Suit",
+      type: "Jackets, Men",
+      price: 176,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/spring_printed_dress-231x300.jpg"
+      image: "img/products/spring_printed_dress-231x300.jpg",
+      title: "Spring Printed Dress",
+      type: "Dress, Women",
+      price: 47,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/black_leather_jacket-231x300.jpg"
+      image: "img/products/black_leather_jacket-231x300.jpg",
+      title: "Black Jacket",
+      type: "Jackets, Women",
+      price: 125,
+      shop: "Add to cart",
+      details: "Details"
     },
     {
-      image: "img/products/modern_love_tee-200x260.jpg"
+      image: "img/products/modern_love_tee-200x260.jpg",
+      title: "Modern Love Tee",
+      type: "T-Shirts, Women",
+      price: 68,
+      shop: "Add to cart",
+      details: "Details"
     },
 
   ]

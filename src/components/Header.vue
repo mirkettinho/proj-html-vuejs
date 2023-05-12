@@ -4,6 +4,7 @@ import Dropdown from "./micro-components/Dropdown.vue"
 import {headerMenu} from "../data/menus"
 
 
+
 export default {
   name: "Header",
   components: {
@@ -35,7 +36,7 @@ export default {
         <div class="info-shopping d-flex align-items">         
           <a href="#">Shopping Cart</a>         
           <a class="border" href="#">My Account</a>
-          <a href="#"><i class="fa-sharp fa-solid fa-bag-shopping"></i>Cart<i class="fa-solid fa-chevron-down"></i></a>
+          <a href="#"><i class="fa-sharp fa-solid fa-bag-shopping"></i>CART<i class="fa-solid fa-chevron-down"></i></a>
         </div>
       </div>
     </div>
@@ -69,12 +70,19 @@ export default {
     i{
       font-size: 10px;
       color: $icon-header;
+      &:hover{
+        color: $star-button-and-hoverlink;
+      }
 
     }
   }
   .info-shopping a{
     padding: 10px;
     font-size: 10px;
+    color: black;
+    i{
+      padding-right: 5px;
+    }
   }.info-shopping a:last-child{
     padding: 9px 30px;
     background-color: #f2f2f2;
@@ -110,18 +118,19 @@ export default {
       cursor: pointer;
       position: relative;
       
-      a:after{
+      &:hover:after{
+        width: 100%;
+        
+      }
+      &:after{
         content: "";
         position: absolute;
-        background-color: red;
-        height: 10px;
-        width: 10px;
+        background-color: $star-button-and-hoverlink;
+        height: 4px;
+        width: 0;
         left: 0;
-        bottom: 1px;
-        transition: 0.3s;
-        a:hover:after{
-          width: 20px;
-        }
+        bottom: 49px;
+        transition: 0.4s ;
       }
       &:hover,
       &.active,

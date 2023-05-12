@@ -13,6 +13,8 @@ import SliderTop from "./micro-components/SliderTop.vue"
 
 
 
+
+
 export default {
   name: "Main",
   components: {
@@ -31,6 +33,7 @@ export default {
 
 <template>
 
+  <!-- <typer /> -->
   <!-- SLIDER TOP -->
   <SliderTop />
 

@@ -65,10 +65,19 @@ export default {
     <!-- CARD -->
     <div class="card">
       <img :src="arrival.image" alt="">
+      <div class="description">
+        <h2>{{arrival.title}}</h2>
+        <h3>{{arrival.type}}</h3>
+        <span>{{arrival.price}}</span>
+        <div class="button d-flex ">
+          <a href="#"><i class="fa-solid fa-cart-plus fa-shake"></i>{{arrival.shop}}</a>
+          <a href="#"><i class="fa-solid fa-list-ul"></i>{{arrival.details}}</a>
+        </div>
+      </div>
     </div>
 
     </swiper-slide>
-
+    <div class="bg-white"></div>
   </swiper>
 
 </template>
@@ -80,12 +89,66 @@ export default {
 
 
 .card{
-  height: 480px;
+  height: 420px;
   background-color: white;
+  position: relative;
+  &:hover .description{
+    opacity: 1;
+    height: 100%;
+  }
+
   
   img{
-    height:  420px;
+    height:  420px;  
+  }.description{
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(rgba(111, 141, 212,0.9), rgba(232, 164, 209,1.1));
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+    h2{
+    text-align: center;
+    line-height: 340px;
+    color: white;
+    font-size: 1.5rem;
+    }h3{
+      left: 25%;
+      top:50px;
+      position: absolute;
+      line-height: 340px;
+      font-size: 0.9rem;
+      color: white;
+
+    }
+    span{
+      top:50px;
+      left: 40%;
+      text-align: center;
+      position: absolute;
+      line-height: 340px;
+      color: white;
+      font-size:  1.5rem;
+
+    }span{
+      top: 100px;
+      left: 41%;
+    }
+    .button{
+      justify-content: space-evenly;
+      a{
+        color: white;
+        font-size: 0.9rem;
+        i{
+          padding-right: 5px;
+        }
+      }
+
+    }
   }
+
 }
 .second-title{
   text-align: center;
@@ -106,4 +169,10 @@ export default {
   padding-top: 90px;
   
 }
+
+.bg-white{
+  height: 140px;
+}
+
+
 </style>

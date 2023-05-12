@@ -47,7 +47,7 @@ export default {
     <!-- CARD -->
     <div class="card">
       <span class="absolute top">{{slide.title}}</span>
-      <span class="absolute letter">{{slide.type}}</span>
+      <span class="absolute letter ">{{slide.type}}</span>
       <div class="d-flex">     
         <a :href="slide.href" class="absolute left">{{slide.namebuttonOne}}</a>
         <a :href="slide.href" class="absolute right">{{slide.namebuttonTwo}}</a>
@@ -67,7 +67,6 @@ export default {
 
 .card{
   height: 700px;
-  background-color: red;
   position: relative;
   text-align: center;
   
@@ -89,8 +88,8 @@ export default {
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    
 
   }.left{
     bottom: 240px;
@@ -104,6 +103,7 @@ export default {
     transform: translate(-50%, -50%);
     font-weight: bold;
     letter-spacing: 1px;
+    
   }.right{
     bottom: 240px;
     left: 1050px;
@@ -118,9 +118,17 @@ export default {
     letter-spacing: 1px;
   }
 }
+a:hover{
+  background-color: rgba(0, 0, 0, 0.1)  ;  
+      
+    }
 
 .letter{
-  letter-spacing: 4px;
+  letter-spacing: 5px;
+}
+
+.nb{
+  font-weight: 400;
 }
 
 

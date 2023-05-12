@@ -38,6 +38,7 @@ export default {
   background-image: url("img/background/bkgd_confetti-compressor.jpg");
   background-position: center;
   background-size: cover;
+  margin-top: 90px;
 }
 
 .box{
@@ -71,6 +72,9 @@ export default {
     border-radius: 20px;
     color: white;
     font-size: 0.6rem;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.1)  ;
+    }
   }
 }
 </style>

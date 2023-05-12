@@ -60,9 +60,12 @@ export default {
   list-style: none;
   position: absolute;
   top: 120px;
+  z-index: 999;
+
 }li{
   background-color: white;
   padding: 10px;
+  
     &:hover{
       background-color: #f6f6f6;
       cursor: pointer;

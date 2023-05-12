@@ -30,8 +30,8 @@ export default {
             <div class="box-card d-flex justify-content">
               <div class="description-card">
                 <a href="#">{{ featured.name }}</a>
-                <h6>{{ featured.rating }}</h6>
-                <h6>{{ featured.discount }} {{ featured.price }}</h6>
+                <h6><i v-for="star in featured.rating" class="fa-solid fa-star" :key="star"></i></h6>
+                <h6 class="grey">{{ featured.discount }} &dollar;{{ featured.price }}</h6>
               </div>
 
               <div class="image-card">
@@ -54,8 +54,8 @@ export default {
             <div class="box-card d-flex justify-content">
               <div class="description-card">
                 <a href="#">{{ sale.name }}</a>
-                <h6>{{ sale.rating }}</h6>
-                <h6>{{ sale.discount }} {{ sale.price }}</h6>
+                <h6><i v-for="star in sale.rating" class="fa-solid fa-star" :key="star"></i></h6>
+                <h6 class="grey">{{ sale.discount }} &dollar;{{ sale.price }}</h6>
               </div>
 
               <div class="image-card">
@@ -78,8 +78,8 @@ export default {
             <div class="box-card d-flex justify-content">
               <div class="description-card">
                 <a href="#">{{ rated.name }}</a>
-                <h6>{{ rated.rating }}</h6>
-                <h6>{{ rated.discount }} {{ rated.price }}</h6>
+                <h6><i v-for="star in rated.rating" class="fa-solid fa-star" :key="star"></i></h6>
+                <h6 class="grey">{{ rated.discount }} &dollar;{{ rated.price }}</h6>
               </div>
 
               <div class="image-card">
@@ -102,8 +102,8 @@ export default {
             <div class="box-card d-flex justify-content">
               <div class="description-card">
                 <a href="#">{{ review.name }}</a>
-                <h6>{{ review.rating }}</h6>
-                <h6>{{ review.discount }} {{ review.price }}</h6>
+                <h6><i v-for="star in review.rating" class="fa-solid fa-star" :key="star"></i></h6>
+                <h6 class="grey">{{ review.credits }}</h6>
               </div>
 
               <div class="image-card">
@@ -139,6 +139,7 @@ export default {
   h5{
     padding: 15px 0;
     color: #5f615f;
+    letter-spacing: 2px;
   }
 }
 
@@ -170,4 +171,13 @@ export default {
   width: 98%;
   margin: 0 auto;
 }
+.grey{
+  color: #6c6361;
+}
+i{
+  color: $star-button-and-hoverlink;
+  padding: 5px 0;
+}
+
+
 </style>

@@ -69,7 +69,10 @@ export default {
     transform: translate(-50%, -50%);
     font-weight: bold;
     letter-spacing: 1px;
-
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.1)  ;
+      
+    }
   }
 }
 

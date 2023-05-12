@@ -54,8 +54,8 @@ export default {
           <div class="box-card d-flex justify-content">
             <div class="description-card">
               <a href="">{{ rated.name }}</a>
-              <h6>{{ rated.rating }}</h6>
-              <h6>{{ rated.discount }} {{ rated.price }}</h6>
+              <h6><i v-for="star in rated.rating" class="fa-solid fa-star" :key="star"></i></h6>
+              <h6>{{ rated.discount }} &dollar;{{ rated.price }}</h6>
             </div>
 
             <div class="image-card">
@@ -147,6 +147,9 @@ export default {
     i{
       font-size: 10px;
       color: $footer-social;
+      &:hover{
+        color: $star-button-and-hoverlink;
+      }
     }
   }
   }
@@ -174,6 +177,9 @@ export default {
     &:hover{
       color: $star-button-and-hoverlink;
     }
+  }i{
+    color: $star-button-and-hoverlink;
+    padding: 5px 0;
   }
 }
 

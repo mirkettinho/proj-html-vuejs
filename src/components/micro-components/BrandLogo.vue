@@ -70,6 +70,10 @@ export default {
 .brand{
   text-align: center;
   padding: 40px 0;
+  h5{
+    color: #8b8e82;
+    letter-spacing: 3px;
+  }
 }
 .bg{
   background-color: #f6f6f6;
